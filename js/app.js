@@ -25,23 +25,35 @@ function Time() {
 Time();
 
 
-var x;
-
-function changeColors(){
-	x = 1;
-	setInterval(change, 1000);
-}
-
-function change(){
-	if (x === 1){
-		color = "red";
-		x = 2;
-	} else {
-		color = "green";
-		x = 1;
-	}
+var currentColor = "red";
+setInterval(function(){
+	
+	document.body.style.backgroundColor = currentColor;
+	currentColor = currentColor === "red" ? "green" : "red";
+}, 5000);
 
 
-document.body.style.background = color;
 
-}
+
+
+
+// var x;
+
+// function changeColors(){
+// 	x = 1;
+// 	setInterval(change, 1000);
+// }
+
+// function change(){
+// 	if (x === 1){
+// 		color = "red";
+// 		x = 2;
+// 	} else {
+// 		color = "green";
+// 		x = 1;
+// 	}
+
+
+// document.body.style.background = color;
+
+// }
