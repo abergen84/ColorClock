@@ -5,10 +5,15 @@ function Time(){
 	var m = today.getMinutes();
 	var s = today.getSeconds();
 
-	document.getElementbyId("container").innerHTML = h + ":" + m ":" + s;
+function checkTime(i) {
+    if (i<10) {i = "0" + i};
+    return i;
+}
 
-	var t = setTimeout(function(){
-		Time()},1000);
+
+document.getElementbyId("container").innerHTML = h + ":" + m ":" + s;
+
+	var t = setTimeout(Time,1000);
 
 }
 
