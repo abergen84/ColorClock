@@ -1,16 +1,16 @@
-var x = document.getElementbyId("container");
-x.style.color = "blue";
+function Time(){
 
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
 
-var d = new Date(),
-	interval = 1000;
+	document.getElementbyId("container").innerHTML = h + ":" + m ":" + s;
 
-var id = setInterval(function() {
-	
-	d.setTime(d.getTime() + interval);
-	
-	console.log(d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+	var t = setTimeout(function(){
+		Time()},1000);
 
-}, interval);
+}
 
+Time();
 
