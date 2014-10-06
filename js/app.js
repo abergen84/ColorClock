@@ -9,6 +9,7 @@ function Time() {
     if (m < 10) m = "0" + m;
     if (s < 10) s = "0" + s;
 
+
     //method 2
     //var parts = ['getHours', 'getMinutes', 'getSeconds'];
     //var time2 = parts.map(function(functionName){
@@ -25,13 +26,9 @@ function Time() {
 
     var t = setTimeout(Time, 1000);
 
-
-
     //function checkTime(i) {
     //   if (i<10) {i = "0" + i};
     //   return i;
-
-
 }
 
 
