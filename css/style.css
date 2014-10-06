@@ -1,9 +1,7 @@
-
 html, body {
     position: relative;
     height: 100%;
 }
-
 #container {
     width: 300px;
     height: 100px;
@@ -17,15 +15,12 @@ html, body {
     left: 0;
     right: 0;
     margin: auto;
-    text-align: center; 
+    text-align: center;
 }
-
-body { 
+body {
     transition: all 2s ease;
     background-color: black;
-
 }
-
-body::after{
+body::after {
     background-color: red;
 }
