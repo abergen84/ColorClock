@@ -1,34 +1,25 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #container {
 	
+  	
+  	display: inline-block;
   	color: white;
     font: 50px;
-    height: 100px;
+/** height: 100px;
     width: 500px;
-    position: relative;
+**/ position: absolute;
+    top: 50%
+    left: 50%;
     text-align: center;
 
-margin: auto;
+/**	margin: auto;
 	position: relative;
 	color: white;
 	font-family: Arial;
 	height: 50px;
 	top: 50%;
 	text-align: center;
-
+**/
 	
 }
 
@@ -41,4 +32,6 @@ body {
 
 }
 
-
+body::after{
+	background-color: red;
+}

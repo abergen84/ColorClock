@@ -9,6 +9,15 @@ function Time(){
 	if (m < 10) m = "0" + m;
 	if (s < 10) s = "0" + s;
 
+//method 2
+//var parts = ['getHours', 'getMinutes', 'getSeconds'];
+//var time2 = parts.map(function(functionName){
+//	var num = d[functionName]();
+//	return num < 10 ? "0" + num : num; 
+//});
+
+
+
 //m = checkTime(m);
 //s = checkTime(s);
 
