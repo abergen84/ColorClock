@@ -18,9 +18,11 @@ html, body {
     text-align: center;
 }
 body {
-    transition: all 2s ease;
-    background-color: blue;
+    transition: all 5s ease;
+/**    background-color: white; **/
 }
-body::after {
+
+/** body::after {
     background-color: red;
 }
+**/

@@ -1,0 +1,13 @@
+Lessons
+
+What I've learned.
+
+Lets see..I knew coming into this class it would be tough and would challenge my brain. So far, to say the least, it's done all that and beyond. I liken learning a coding language to learning a foreign language. As hard as it is, it's about getting a feel for how sentences are put together and how it flows. Once you see example after example and practice and practice, I believe it starts to feel more natural. Right now though, I fully admit that it's tough, and does not "click" quite yet.
+
+Mistakes I've made:
+
+Last night, I spent some serious quality time going over this Clock, but did not get as far as I wanted to. I knew I needed to get the basics down before worrying about the details, so I tried to get the clock to show up on the page before I worried about how it looked and the color transitions. After reading over the notes and finding an example online, I was able to put the code together (not from scratch but by looking at the example and thinking out loud). 
+
+Unfortunately, my code wasnt working. At first, I looked and noticed I had a couple brackets out of place (still a struggle of mine, when to use brackets properly). After I thought I fixed those, I noticed I was getting an undefined error. Turns out, I forgot to add a "+" sign when I was pulling together the string that displays the time. I was looking at the reference code to compare, and at first couldnt find what was wrong. I even copy/pasted that line over the line I had written, and didnt see it. Maybe it was my tired eyes, who knows. 
+
+After fixing that, I ran into an issue with the getElementById tag in relation to the innerHTML part. It was telling me something about innerHTML could not be set to property null, or something like that. I spent about 2 hours trying to fix this issue. Then after I googled it the next morning (not sure why I didnt think to do that earlier), it turns out that the script tag needed to be placed at the end of the body, not in the head area that I had it placed in. It turns out that the DOM element was running before the page had a chance to run everything, so it was not recognizing that line properly and breaking the code. 

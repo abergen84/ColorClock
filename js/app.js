@@ -25,11 +25,13 @@ function Time() {
 Time();
 
 
-var currentColor = "red";
+var currentColor = "blue";
+
 setInterval(function(){
 	
 	document.body.style.backgroundColor = currentColor;
-	currentColor = currentColor === "red" ? "green" : "red";
+	
+	currentColor = currentColor === "blue" ? "green" : "blue";
 }, 5000);
 
 
