@@ -19,7 +19,7 @@ html, body {
 }
 body {
     transition: all 5s ease;
-/**    background-color: white; **/
+    background-color: #9B0BEF; 
 }
 
 /** body::after {

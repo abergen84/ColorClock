@@ -25,17 +25,37 @@ function Time() {
 Time();
 
 
-var currentColor = "blue";
+var currentColor = "#9B0BEF";
 
 setInterval(function(){
 	
 	document.body.style.backgroundColor = currentColor;
 	
-	currentColor = currentColor === "blue" ? "green" : "blue";
+	currentColor = currentColor === "#9B0BEF" ? "#6C09A5" : "#9B0BEF";
 }, 5000);
 
 
 
+div.textContent = time2.join(":");
+
+        body.style['background-color'] =
+            "rgb(" +
+            convertTimeToRGB(time2).join(',') +
+            ")";
+
+
+
+function convertTimeToRGB(times) {
+
+        var ranges = [24, 60, 60],
+            result = [];
+
+        times.forEach(function(time, index) {
+            result[index] = ~~ (time / ranges[index] * 255);
+        });
+
+        return result;
+    }
 
 
 
